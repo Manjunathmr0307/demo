@@ -2,6 +2,9 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+def add(a, b):
+    return a + b
+
 @app.get('/')
 def api():
     return jsonify({"message": "Hello, Manjunath M R!"})
